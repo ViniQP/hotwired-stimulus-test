@@ -1,0 +1,31 @@
+<!-- <div data-controller="toggle" data-hello-number-value=4>
+  <%# <h1 data-target="hello.output"></h1> %>
+  <h1 data-hello-target='output'></h1>
+  <button data-action='toggle#clicked'>CLICK ME</button>
+</div> -->
+
+<div data-controller="toggle" data-toggle-hide-class="hide">
+  <h1 data-toggle-target='text' >This text will disappear</h1>
+  <button data-action='toggle#clicked'>CLICK ME</button>
+</div>
+<br>
+<div data-controller="styling"
+     data-styling-primary-class="btn-primary">
+  <button class='btn' data-styling-target='button' data-action='styling#clicked'>
+    CLICK ME
+  </button>
+  <button data-action="styling#clicked:once">CLICK ONCE</button>
+</div>
+<br>
+<div data-controller='checkbox' data-checkbox-highlight-class="highlight">
+  <input type="checkbox" data-action='checkbox#checked'>
+  <h1 data-checkbox-target="text">THIS H1 WILL BE HIGHLIGHTED</h1>
+</div>
+
+<div data-controller="limit" 
+     data-limit-character-count-value = 280, 
+     data-limit-highlight-class="text-danger">
+     <textarea cols="30" rows="10" data-limit-target="text", data-action="keyup->limit#change"></textarea>
+  <div data-limit-target="output">
+  </div>
+</div>
